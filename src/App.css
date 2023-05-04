@@ -1,0 +1,92 @@
+html {
+  background: url(/src/assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*the next two lines are used for android support*/
+  height: 100%;
+  overflow: hidden;
+} 
+
+h1,h2,h3,h4,h5,h6 {
+  color: #FF9800 !important;
+  /* text-shadow: #8e8e8e 0.5px 0.5px; */
+  text-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+  font-family: 'Permanent Marker', cursive;
+}
+h3{
+  font-family: 'Montserrat';
+}
+
+
+.hero {
+  position: absolute;
+  top: 50%;
+}
+
+a {
+  color: #FF9800  !important;
+  /* color: #54fffc !important; */
+  text-decoration: none;
+  /* text-shadow: #515151 1px 1px; */
+  text-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
+a:hover {
+  color: #c5c5c5 !important;
+}
+
+.hero i {
+  font-size: 1.2em;
+  animation: breathe 2s ease-in-out infinite;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 1rem;
+  }
+}
+
+
+@keyframes breathe {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+ul {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 359px) {
+  ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Use a responsive layout */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
